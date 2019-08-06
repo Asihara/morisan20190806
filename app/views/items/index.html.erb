@@ -1,0 +1,8 @@
+<!-- app/views/items/index.html.erb -->
+<h1>出品商品一覧</h1>
+<ol>
+  <% @items.each do |item| %>
+    <li><%= link_to item.name, item %></li>
+    <!-- <li> <a href= /items/<%= item.id %> ><%= item.name %> </a> </li > -->
+  <% end %>
+</ol>
